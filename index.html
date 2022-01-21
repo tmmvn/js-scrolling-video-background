@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type"
+          content="text/html; charset=euc-kr"
+    >
+    <title>
+      Scrolling Video Background Test
+    </title>
+    <meta name="description"
+          content="Scrolling Video Background Test"
+    />
+    <meta name="author"
+          content="Codemeddler"
+    />
+    <meta name="viewport"
+          content="width=device-width, maximum-scale=1.0, user-scalable=2.0"
+    />
+    <link rel="stylesheet"
+          href="site.css"
+    />
+    <script type="text/javascript"
+            src="videoScroller.js"
+    ></script>
+    <!--[if lt IE 9]>
+    <script>
+      document.createElement('video');
+    </script>
+    <![endif]-->
+  </head>
+  <body>
+    <video autoplay
+           loop
+           poster="bg.png"
+           id="bg-vid"
+    >
+      <source src="bg.mp4"
+              type="video/mp4"
+      >
+    </video>
+    <nav>
+      <a href="#linkA">Link A</a>
+      <a href="#linkB">Link B</a>
+      <a href="#linkC">Link C</a>
+      <a href="#linkD">Link D</a>
+    </nav>
+    <main id="text-bg">
+      <header>
+        <h1>Scrolling video background test</h1>
+      </header>
+      <p>A simple test for an animated background using a video.
+      <p>
+    </main>
+  </body>
+</html>

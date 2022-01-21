@@ -1,0 +1,133 @@
+@charset "utf-8";
+body
+{
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+html
+{
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after
+{
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+video#bg-vid
+{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url("bg.png") no-repeat;
+  background-size: cover;
+}
+video
+{
+  display: block;
+  pointer-events: none;
+}
+::-webkit-media-controls
+{
+  display: none !important;
+}
+#text-bg
+{
+  width: 66%;
+  float: right;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.33);
+  margin-right: 10%;
+  padding: 2rem 2% 2% 2%;
+  min-height: 150em;
+  height: 150em;
+  display: block;
+}
+h1
+{
+  color: #FFFFFF;
+  float: right;
+  display: block;
+  clear: both;
+  font-size: 2.2rem;
+  padding: 0.2rem 0.8rem 0 0;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin: 1.0rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #FF0000, 0 0 5px #FF0000;
+}
+p
+{
+  padding: 0.8rem;
+  font-size: 0.9rem;
+  clear: both;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFFFFF;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  text-align: justify;
+  box-shadow: 0 0 50px #FF0000;
+}
+nav
+{
+  position: fixed;
+  display: block;
+  padding: 0;
+  margin-right: 0;
+  float: left;
+  width: 100%;
+  opacity: 1.0;
+  z-index: 100;
+}
+nav a
+{
+  width: 25%;
+  padding: 0.2rem;
+  margin: auto;
+  display: block;
+  text-align: center;
+  opacity: 1.0;
+  text-decoration: none;
+  color: #FFFFFF;
+  float: left;
+  clear: none;
+  background: #000000;
+  background: -webkit-linear-gradient(#000000, #111111);
+  background: -o-linear-gradient(#000000, #111111);
+  background: -moz-linear-gradient(#000000, #111111);
+  background: linear-gradient(#000000, #111111);
+  letter-spacing: 3px;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  border: 5px solid #FFFFFF;
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+  text-shadow: 0 0 10px #FFFFFF, 0 0 5px #FFFFFF;
+}
+nav a:hover
+{
+  box-shadow: 0 5px 25px #FFFFFF;
+}
+main
+{
+  padding: 0;
+  width: 100%;
+}
